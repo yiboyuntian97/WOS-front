@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <link>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <title>wos-front</title>
+    <link rel="stylesheet" href="/static/css/reset.css"></link>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1340317_6ridqjdcved.css"></link>
+    <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
+<script>
+  if ('addEventListener' in document) {
+    document.addEventListener('DOMContentLoaded', function() {
+      FastClick.attach(document.body);
+    }, false);    // 如果使用 {passive: false}, 会出现不能滑动的情况
+  }
+  if(!window.Promise) {
+    document.writeln('<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"'+'>'+'<'+'/'+'script>');
+  }
+  // $(document).ready(function () {
+  //取消浏览器默认行为
+  document.addEventListener('touchstart',function(event){
+    event.preventDefault();
+  }, false)
+  //点透
+  !(function () {
+    let aNodes = document.querySelectorAll('a');
+    let i = 0;
+    for (; i < aNodes.length; i++) {
+      aNodes[i].addEventListener('touchstart', function () {
+        window.location = this.href;
+      });
+    }
+  })();
+  //rem适配
+  !(function () {
+    let width = document.documentElement.clientWidth;
+    let styleNode = document.createElement('style');
+    styleNode.innerHTML = 'html{font-size: ' + width / 10 + 'px !important;}';
+    document.head.appendChild(styleNode);
+  })();
+</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

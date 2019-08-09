@@ -143,8 +143,9 @@ export default {
                 height 100%
                 .swiper-wrapper
                     width 100%
-                    height 100%
-                    .swiper-slide
+                    height 100%;
+                    margin-top:50px;
+                    .swiper-slide 
                         display flex
                         justify-content center
                         align-items flex-start

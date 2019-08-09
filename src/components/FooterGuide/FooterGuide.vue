@@ -6,12 +6,14 @@
                 <i class="iconfont iconshouye"></i>
             </span>
             <span>外卖</span>
+            <!-- <router-link :to="msite">外卖</router-link> -->
         </span> 
         <span class="guide_item" :class="{on: '/search' === $route.path}" @click="goTo('/search')">
             <span class="item_icon">
                 <i class="iconfont iconsousuo"></i>
             </span>
             <span>搜索</span>
+            <!-- <router-link :to="search">搜索</router-link> -->
         </span>
         <span class="guide_item" :class="{on: '/order' === $route.path}" @click="goTo('/order')">
             <span class="item_icon">
@@ -32,7 +34,9 @@
 export default {
     methods: {
         goTo(path) {
-            this.$router.replace(path)
+            console.log(222)
+            this.$router.push(path)
+            // this.$router.replace(path)
         }
     }
 }

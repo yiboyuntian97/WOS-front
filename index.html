@@ -3,9 +3,10 @@
   <link>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <meta name="renderer" content="webkit">
     <title>wos-front</title>
     <link rel="stylesheet" href="/static/css/reset.css"></link>
-    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1340317_xedj8ax196n.css"></link>
+    <link rel="stylesheet" type="text/css" href="http://at.alicdn.com/t/font_1340317_2dg0bqcw8wr.css"></link>
     <script src="https://as.alipayobjects.com/g/component/fastclick/1.0.6/fastclick.js"></script>
 <script>
   if ('addEventListener' in document) {
@@ -20,7 +21,7 @@
   //取消浏览器默认行为
   document.addEventListener('touchstart',function(event){
     event.preventDefault();
-  }, false)
+  }, { passive: false })
   //点透
   !(function () {
     let aNodes = document.querySelectorAll('a');

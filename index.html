@@ -20,7 +20,7 @@
   //取消浏览器默认行为
   document.addEventListener('touchstart',function(event){
     event.preventDefault();
-  }, false)
+  }, { passive: false })
   //点透
   !(function () {
     let aNodes = document.querySelectorAll('a');

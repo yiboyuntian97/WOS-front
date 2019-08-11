@@ -73,14 +73,29 @@
             <i class="iconfont iconxuanxiang1"></i>
             <span class="shop_header_title">附近商家</span>
           </div>
+          <shop-list></shop-list>
         </div>
     </div>
 </template>
 
 <script>
+import Swiper from 'swiper'
+import 'swiper/dist/css/swiper.min.css'
 import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+import ShopList from '../../components/ShopList/ShopList.vue'
+
 export default {
-    components:{HeaderTop}
+    mounted() {
+        // 创建一个Swiper实例对象实现轮播
+        new Swiper('.swiper-container',{
+            loop: true, // 可以循环轮播
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            }
+        })
+    },
+    components:{HeaderTop,ShopList}
 }
 </script>
 

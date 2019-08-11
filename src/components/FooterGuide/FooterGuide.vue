@@ -34,7 +34,6 @@
 export default {
     methods: {
         goTo(path) {
-            console.log(222)
             this.$router.push(path)
             // this.$router.replace(path)
         }

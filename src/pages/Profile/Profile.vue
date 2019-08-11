@@ -1,7 +1,8 @@
 <template>
   <section class="profile">
+    <header-top title="我的"></header-top>
     <section class="profile-number">
-      <router-link class="profile-link" :to="msite">
+      <router-link class="profile-link" to="/login">
         <div class="profile_image">
           <i class="iconfont iconperson"></i>
         </div>
@@ -104,7 +105,9 @@
 //   import {mapState} from 'vuex'
 //   import { MessageBox, Toast } from 'mint-ui'
 //   import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
 export default {
+    components: {HeaderTop},
     data() {
         return{
             msite: 'msite'
@@ -197,7 +200,7 @@ export default {
           border-radius 50%
           overflow hidden
           vertical-align top
-          .icon-person
+          .iconperson
             background #e4e4e4
             font-size 62px
         .user-info
@@ -216,7 +219,7 @@ export default {
               margin-right 5px
               width 20px
               height 20px
-              .icon-mobile
+              .iconmobile
                 font-size 30px
                 vertical-align text-top
             .icon-mobile-number
@@ -228,7 +231,7 @@ export default {
           position absolute
           right 15px
           top 40%
-          .icon-jiantou1
+          .iconjiantouxiangshang 
             color #fff
             font-size 5px
     .profile_info_data

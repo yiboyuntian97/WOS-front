@@ -1,5 +1,6 @@
 <template>
   <section class="profile">
+    <header-top title="我的"></header-top>
     <section class="profile-number">
       <router-link class="profile-link" :to="msite">
         <div class="profile_image">
@@ -104,7 +105,9 @@
 //   import {mapState} from 'vuex'
 //   import { MessageBox, Toast } from 'mint-ui'
 //   import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
+import HeaderTop from '../../components/HeaderTop/HeaderTop.vue'
 export default {
+    components: {HeaderTop},
     data() {
         return{
             msite: 'msite'

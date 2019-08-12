@@ -2,7 +2,7 @@
 <template>
     <div class="msite">
         <!-- 首页头部 -->
-        <header-top title="上海市浦东新区曹路镇银峰路676">
+        <header-top title="上海市和平饭店">
             <span class="header_search" slot="left">
                 <i class="iconfont iconsousuo"></i>
             </span>
@@ -19,25 +19,25 @@
                             <div class="food_container">
                                 <img src="./images/nav/1.jpg">
                             </div>
-                            <span>甜品饮品</span>
+                            <span>三花五罗</span>
                         </a>
                         <a href="javascript:" class="link_to_food">
                             <div class="food_container">
                                 <img src="./images/nav/2.jpg">
                             </div>
-                            <span>商超便利</span>
+                            <span>鲤鱼</span>
                         </a>
                         <a href="javascript:" class="link_to_food">
                             <div class="food_container">
                                 <img src="./images/nav/3.jpg">
                             </div>
-                            <span>美食</span>
+                            <span>鲈鱼</span>
                         </a>
                         <a href="javascript:" class="link_to_food">
                             <div class="food_container">
                                 <img src="./images/nav/4.jpg">
                             </div>
-                            <span>简餐</span>
+                            <span>鲑鱼</span>
                         </a>
                         <a href="javascript:" class="link_to_food">
                             <div class="food_container">
@@ -71,7 +71,7 @@
         <div class="msite_shop_list">
           <div class="shop_header">
             <i class="iconfont iconxuanxiang1"></i>
-            <span class="shop_header_title">附近商家</span>
+            <span class="shop_header_title">更多服务</span>
           </div>
           <shop-list></shop-list>
         </div>

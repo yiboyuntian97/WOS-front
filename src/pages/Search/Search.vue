@@ -3,7 +3,7 @@
     <div class="search">
         <header-top title="搜索"></header-top>
         <form class="search-form" action="#">
-            <input type="search" name="search" class="search_input" placeholder="请输入商家或美食名称">
+            <input type="search" name="search" class="search_input" placeholder="请输入您需要的鱼类名称">
             <input type="submit" name="submit" class="search_submit">
         </form>
     </div>

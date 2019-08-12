@@ -9,7 +9,7 @@
         <header-top title="订单列表"></header-top>
         <section class="order_no_login">
             <img src="./images/person.png">
-            <h3>登陆后查看外卖订单</h3>
+            <h3>登陆后查看当前订单</h3>
             <button>立即登录</button>
         </section>
     </section>

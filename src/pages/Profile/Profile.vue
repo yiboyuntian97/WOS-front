@@ -1,6 +1,6 @@
 <template>
   <section class="profile">
-    <header-top title="我的"></header-top>
+    <header-top title="二林鱼档"></header-top>
     <section class="profile-number">
       <router-link class="profile-link" to="/login">
         <div class="profile_image">
@@ -73,7 +73,7 @@
           <i class="iconfont iconVIP"></i>
         </span>
         <div class="my_order_div">
-          <span>硅谷外卖会员卡</span>
+          <span>我的卡包</span>
           <span class="my_order_icon">
             <i class="iconfont iconjiantouxiangshang"></i>
           </span>

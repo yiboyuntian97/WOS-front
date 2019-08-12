@@ -5,7 +5,7 @@
             <span class="item_icon">
                 <i class="iconfont iconshouye"></i>
             </span>
-            <span>外卖</span>
+            <span>首页</span>
             <!-- <router-link :to="msite">外卖</router-link> -->
         </span> 
         <span class="guide_item" :class="{on: '/search' === $route.path}" @click="goTo('/search')">

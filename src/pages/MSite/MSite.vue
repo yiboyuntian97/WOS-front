@@ -89,6 +89,10 @@ import { mapState } from 'vuex'
 export default {
   components: { HeaderTop, ShopList },
   mounted() {
+    
+    this.$store.dispatch('getCategorys')
+
+
     // 创建一个Swiper实例对象实现轮播
     new Swiper('.swiper-container', {
       loop: true, // 可以循环轮播
